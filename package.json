@@ -2,5 +2,26 @@
   "dependencies": {
     "express": "^4.18.1",
     "mongoose": "^6.5.4"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "name": "examen1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoowercoloradomejia/examen1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoowercoloradomejia/examen1/issues"
+  },
+  "homepage": "https://github.com/hoowercoloradomejia/examen1#readme",
+  "description": ""
 }
