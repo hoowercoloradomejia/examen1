@@ -1,6 +1,11 @@
 const express = require("express")
-
+const mongoose = require("mongoose")
 
 const app = express()
-const port = 3000
-app.listen(port, ()=>{console.log('conect with the port',port)});
+const port = process.env.PORT||3000
+const uri=`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@electiva1.mtunbw2.mongodb.NET/${process.env.DBNAME}}`
+
+mongoose.connect(uri)
+.then(console.log(`data base connected`))
+.catch((error)=>console.log(error))
+app.listen(port, ()=>{console.log(`Connect with the port`, port)})
